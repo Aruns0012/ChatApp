@@ -1,0 +1,83 @@
+.Main-Container{
+    width: 80vw;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+
+    /* margin: auto; */
+}
+
+/* -=--------------------------------------------- */
+
+.sideBar{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.sideHeader{
+    /* height: 10%; */
+    background-color: #d5c3fa;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 10px 5px;
+    margin: 10px;
+    /* line-height: 100%; */
+}
+
+
+.sideIcons{
+    margin: auto 5px;
+    cursor: pointer;
+}
+
+.sideSearch{
+    /* height: 10%; */
+    background-color: #d5c3fa;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.searchBox{
+    outline-width: 0;
+    background-color: #d5c3fa;
+    border: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+
+.sideConvers{
+    /* height: 74%; */
+    background-color: #d5c3fa;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px 5px;
+    flex: 1;
+
+
+}
+
+
+
+/* -=---------------------------------------------- */
+.workArea{
+    background-color: #d5c3fa;
+    height: 97%;
+    width: 100%;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px 5px;
+
+    /* border-radius: 10px; */
+
+}
