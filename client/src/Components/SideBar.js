@@ -1,41 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./style.css"
+import ConversationItem from './ConversationItem'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import GroupIcon from '@mui/icons-material/Group';
+import PersonAddAltRoundedIcon from '@mui/icons-material/PersonAddAltRounded';
+import NightlightRoundRoundedIcon from '@mui/icons-material/NightlightRoundRounded';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
-
-const SideBar = () => {
+const SideBar = ({conversation}) => {
+    // console.log(props);
     return (
         <div className='sideBar'>
             <div className='sideHeader'>
                 <div className='sideUser'>
-                    <span class="material-symbols-outlined sideIcons">
-                        account_circle
-                    </span>
+                    <AccountCircleIcon/>
                 </div>
                 <div className='sideExtras'>
-                    <span class="material-symbols-outlined sideIcons">
-                        group
-                    </span>
-                    <span class="material-symbols-outlined sideIcons">
-                        person_add
-                    </span>
-                    <span class="material-symbols-outlined sideIcons">
-                        dark_mode
-                    </span>
+                    <GroupIcon />
+                    <PersonAddAltRoundedIcon/>
+                    <NightlightRoundRoundedIcon/>
                 </div>
-
-
-
-
-
-
             </div>
+
+
             <div className='sideSearch'>
-                <span class="material-symbols-outlined sideIcons">
-                    search
-                </span>
-                <input type="text" name="search-box" className='searchBox' placeholder='Search'/>
+                <SearchRoundedIcon/>
+                <input type="text" name="search-box" className='inputField' placeholder='Search' />
             </div>
-            <div className='sideConvers'>main</div>
+
+
+
+            <div className='sideConvers'>
+                {conversation.map((conversation) => {
+                    return <ConversationItem props={conversation} key={conversation.name}/>
+                })}
+            </div>
 
         </div>
     )

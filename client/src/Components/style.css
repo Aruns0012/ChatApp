@@ -47,37 +47,191 @@
     align-items: center;
 }
 
-.searchBox{
-    outline-width: 0;
-    background-color: #d5c3fa;
-    border: none;
-    font-size: 1.2rem;
-    margin: 0 10px;
-}
-
 
 .sideConvers{
     /* height: 74%; */
     background-color: #d5c3fa;
     margin: 10px;
     border-radius: 15px;
-    padding: 10px 5px;
+    padding: 5px 5px;
     flex: 1;
+    /* overflow: scroll; */
+}
 
+.conversationItem{
+    display: grid;
+    grid-template-columns: 32px auto auto;
+    grid-template-rows:auto auto;
+    column-gap: 10px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.convLogo{
+    grid-area: 1/1/3/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 32px;
+    width: 32px;
+    background-color: #e6e2f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.convTitle{
+    grid-area: 1/2/2/4;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.convLastM{
+    margin: 5px;
+}
+.convTime{
+justify-self: flex-end;
 
 }
 
 
 
+
+
 /* -=---------------------------------------------- */
-.workArea{
+.chatArea{
     background-color: #d5c3fa;
     height: 97%;
     width: 100%;
     margin: 10px;
     border-radius: 15px;
-    padding: 10px 5px;
-
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
     /* border-radius: 10px; */
 
+}
+
+
+.chatElements{
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+.chatHeader{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.convInfo{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.chatMessages{
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chatMessages::-webkit-scrollbar{
+    width: 5px;
+    /* display: none; */
+}
+
+.message{
+    justify-content: start;
+    display: flex;
+    width: 100%;
+}
+
+
+.messageS{
+    display: flex;
+    right: 0;
+    justify-content: end;
+    width: 100%;
+}
+.textBody{
+    width: 50%;
+    display: flex;
+    min-width: 150px;
+    padding: 0 10px;
+    /* width: 40%; */
+}
+.textBodyS{
+    display: flex;
+    justify-content: end;
+}
+
+.textContent{
+    padding: 10px;
+    background-color: #f5f5ff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+.textContentS{
+    /* background-color: red; */
+    text-align: right;
+}
+
+
+
+
+
+.chatText{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.entertext{
+    flex: 1;
+    font-size: 2rem;
+}
+.enterBtn{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =============-------------------------------------------------------------------------- */
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+/* -------------------------------------Creategrup.js------------------------------- */
+
+.createGroup-container{
+    /* border: 1px solid black; */
+    flex: 1;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: peachpuff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.inputField{
+    border: none;
+    outline-width: 0;
+    background: none;
+    font-size: 1.2em;
+    width: 100%;
 }
