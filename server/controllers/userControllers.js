@@ -4,8 +4,10 @@ const bcrypt = require("bcrypt");
 
 const loginController = async (req,res)=>{
     // res.send("inside login");
-    const {email, name, password} = req.body;
-    if(!email || !name || !password){
+    console.log(req.body);
+    // console.log("called");
+    const {email, password} = req.body;
+    if(!email || !password){
         res.json({message:"field empty"});
     }
 
@@ -17,6 +19,8 @@ const loginController = async (req,res)=>{
         }else{
             res.send("incorrect password")
         }
+    }else{
+        res.send("user not found")
     }
     
 }
