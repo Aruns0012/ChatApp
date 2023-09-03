@@ -23,9 +23,9 @@ const Login = () => {
     name = e.target.name;
     value = e.target.value;
     setUser({ ...user, [name]: value });
-    console.log(user);
   }
 
+  
 
     const navigate = useNavigate();
     return (
