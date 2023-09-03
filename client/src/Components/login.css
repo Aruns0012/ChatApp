@@ -16,5 +16,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    box-shadow: 2px 9px 23px -5px rgb(117, 112, 138);
+    border-radius: 20px;
     /* border: 1px solid black; */
+}
+
+.loginText{
+    font-size: 2rem;
+    text-align: center;
 }

@@ -5,6 +5,7 @@
     display: flex;
     border-radius: 10px;
     padding: 20px;
+    box-shadow: 2px 9px 23px -5px rgb(117, 112, 138);
 
     /* margin: auto; */
 }
@@ -13,9 +14,13 @@
 
 .sideBar{
     height: 100%;
-    width: 35%;
+    min-width: 30%;
     display: flex;
     flex-direction: column;
+    max-width: 30%;
+    border-radius: 20px;
+    box-shadow: 2px 9px 23px -5px rgb(117, 112, 138);
+
 }
 
 
@@ -32,9 +37,15 @@
 }
 
 
-.sideIcons{
-    margin: auto 5px;
+.toHover{
+    margin: auto 10px;
     cursor: pointer;
+    transition-duration: .2s;
+}
+.toHover:hover{
+    transform: scale(1.2);
+}.toHover:active{
+
 }
 
 .sideSearch{
@@ -67,6 +78,18 @@
     margin: 5px;
     border-radius: 10px;
     background-color: white;
+    transition-duration: .2s;
+    box-shadow: 2px 9px 23px -5px rgb(117, 112, 138);
+
+}
+
+.conversationItem:hover{
+    background-color: #d5c3fa;
+    transform: scale(1.05);
+}.conversationItem:active{
+    background-color: #f1edfa;
+    transform: scale(1.1);
+
 }
 
 .convLogo{
@@ -113,7 +136,7 @@ justify-self: flex-end;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
-    /* border-radius: 10px; */
+    box-shadow: 2px 9px 23px -5px rgb(117, 112, 138);
 
 }
 
@@ -219,7 +242,8 @@ justify-self: flex-end;
 
 .createGroup-container{
     /* border: 1px solid black; */
-    flex: 1;
+    /* flex: 1; */
+    width: 65%;
     align-self: center;
     display: flex;
     justify-content: space-between;

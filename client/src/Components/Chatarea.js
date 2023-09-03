@@ -6,6 +6,8 @@ import CloseIcon from '@mui/icons-material/Close';
 
 
 const Chatarea = ({ conversation }) => {
+
+    
     return (
         <div className='chatArea'>
             <div className="chatHeader chatElements">
